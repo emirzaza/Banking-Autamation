@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D0B12AA-D5CA-4DC4-8DA9-6C1787F6878F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nesne1._0</RootNamespace>
+    <AssemblyName>Nesne1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=7.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>packages\Npgsql.7.0.1\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.7.0.0\lib\net462\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.7.0.0\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Channels.7.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banka.cs" />
+    <Compile Include="BankaDokumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankaDokumu.Designer.cs">
+      <DependentUpon>BankaDokumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselDokum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselDokum.Designer.cs">
+      <DependentUpon>BireyselDokum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselHavale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselHavale.Designer.cs">
+      <DependentUpon>BireyselHavale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselHesap.Designer.cs">
+      <DependentUpon>BireyselHesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselHesapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselHesapEkle.Designer.cs">
+      <DependentUpon>BireyselHesapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselHesapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselHesapSil.Designer.cs">
+      <DependentUpon>BireyselHesapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselMusteri.cs" />
+    <Compile Include="clsbireyselhesap.cs" />
+    <Compile Include="clstiicarihesap.cs" />
+    <Compile Include="FirstPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPage.Designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisYap.Designer.cs">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap.cs" />
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselParaCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselParaCek.Designer.cs">
+      <DependentUpon>BireyselParaCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BireyselParaYatir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BireyselParaYatir.Designer.cs">
+      <DependentUpon>BireyselParaYatir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicariDokum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariDokum.Designer.cs">
+      <DependentUpon>TicariDokum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariHavale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariHavale.Designer.cs">
+      <DependentUpon>TicariHavale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariHesap.Designer.cs">
+      <DependentUpon>TicariHesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariHesapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariHesapEkle.Designer.cs">
+      <DependentUpon>TicariHesapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariHesapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariHesapSil.Designer.cs">
+      <DependentUpon>TicariHesapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariMusteri.cs" />
+    <Compile Include="TicariParaCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariParaCek.Designer.cs">
+      <DependentUpon>TicariParaCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicariParaYatir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicariParaYatir.Designer.cs">
+      <DependentUpon>TicariParaYatir.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BankaDokumu.resx">
+      <DependentUpon>BankaDokumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselDokum.resx">
+      <DependentUpon>BireyselDokum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselHavale.resx">
+      <DependentUpon>BireyselHavale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselHesap.resx">
+      <DependentUpon>BireyselHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselHesapEkle.resx">
+      <DependentUpon>BireyselHesapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselHesapSil.resx">
+      <DependentUpon>BireyselHesapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisYap.resx">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselParaCek.resx">
+      <DependentUpon>BireyselParaCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BireyselParaYatir.resx">
+      <DependentUpon>BireyselParaYatir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TicariDokum.resx">
+      <DependentUpon>TicariDokum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariHavale.resx">
+      <DependentUpon>TicariHavale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariHesap.resx">
+      <DependentUpon>TicariHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariHesapEkle.resx">
+      <DependentUpon>TicariHesapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariHesapSil.resx">
+      <DependentUpon>TicariHesapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariParaCek.resx">
+      <DependentUpon>TicariParaCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicariParaYatir.resx">
+      <DependentUpon>TicariParaYatir.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+</Project>

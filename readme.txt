@@ -1,0 +1,1 @@
+Uygulamanın düzgün çalışması için kendi veritabanınızı oluşturmalısınız ve oluşturduğunuz veritabanı "veritabanı_görüntüleri" klasöründeki veritabanı resimleri ile isimlendirme ve sıralama olarak uygun olmalıdır.
